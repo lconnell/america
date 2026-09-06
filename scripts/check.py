@@ -27,5 +27,5 @@ for bad in ['Grand Canyon','Lite Flight','LA helicopter','two helicopter','PHOTO
     assert bad.lower() not in html.lower(),f'Stale content: {bad}'
 data=json.loads((root/'scripts/itinerary.json').read_text())
 assert [d['date'] for d in data]==[(date(2026,9,9)+timedelta(days=i)).isoformat() for i in range(15)]
-assert [d['city'] for d in data]==['sf']*4+['la']*2+['nyc']*9
+assert [d['city'] for d in data]==['sf']*4+['la']*2+['vegas']+['nyc']*8
 print('Verified: 15 consecutive days, requested destinations, corrected exclusions, section links, image metadata and local assets.')
