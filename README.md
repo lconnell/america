@@ -1,4 +1,4 @@
-# The America Edit
+# Sofia’s American Adventure
 
 A responsive first-time USA itinerary for September 9–23, 2026: Los Angeles, Las Vegas and New York City.
 
@@ -18,7 +18,7 @@ The site is dependency-free static HTML, CSS and JavaScript. Python 3.12+ is use
 
 - September 23 is the departure day; hotel and flight details are not yet supplied.
 - Three LA nights, three Las Vegas nights and eight NYC nights.
-- The helicopter experience is in NYC only. No Grand Canyon excursion.
+- The helicopter experience is in NYC only: September 18 primary, September 19 the only backup. No Grand Canyon excursion.
 - All schedule windows and budgets are estimates, not reservations or live quotes.
 - Primary travel sources and Unsplash photographer credits are linked on the page.
 
