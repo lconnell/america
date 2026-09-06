@@ -20,12 +20,12 @@ class Audit(HTMLParser):
             elif value and not value.startswith(('http:','https:','data:')): self.local.append(value)
 html=(root/'index.html').read_text(); audit=Audit(); audit.feed(html)
 assert len(audit.ids)==len(set(audit.ids)), 'Duplicate IDs'
-assert len(audit.days)==15
+assert len(audit.days)==16
 assert set(audit.anchors).issubset(audit.ids), 'Broken section link'
 for f in audit.local: assert (root/f).is_file(),f'Missing asset: {f}'
 for bad in ['Grand Canyon','Lite Flight','LA helicopter','two helicopter','PHOTO_CREDITS','being prepared']:
     assert bad.lower() not in html.lower(),f'Stale content: {bad}'
 data=json.loads((root/'scripts/itinerary.json').read_text())
-assert [d['date'] for d in data]==[(date(2026,9,9)+timedelta(days=i)).isoformat() for i in range(15)]
-assert [d['city'] for d in data]==['sf']*4+['la']*2+['vegas']+['nyc']*8
-print('Verified: 15 consecutive days, requested destinations, corrected exclusions, section links, image metadata and local assets.')
+assert [d['date'] for d in data]==[(date(2026,9,9)+timedelta(days=i)).isoformat() for i in range(16)]
+assert [d['city'] for d in data]==['sf']*4+['la']*2+['vegas']+['nyc']*9
+print('Verified: 16 consecutive calendar dates, requested destinations, corrected exclusions, section links, image metadata and local assets.')

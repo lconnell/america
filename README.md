@@ -1,6 +1,6 @@
 # Sofia’s American Adventure
 
-A responsive first-time USA itinerary for September 9–23, 2026: San Francisco, Santa Cruz, Los Angeles, Las Vegas and New York City.
+A responsive first-time USA itinerary for September 9–24, 2026: San Francisco, Santa Cruz, Los Angeles, Las Vegas and New York City.
 
 Live site: https://lconnell.github.io/america/
 
@@ -16,7 +16,8 @@ The site is dependency-free static HTML, CSS and JavaScript. Python 3.12+ is use
 
 ## Planning assumptions
 
-- September 23 is the departure day; hotel and flight details are not yet supplied.
+- Sofia departs NYC September 24 at 01:00; airport transfer is the evening of September 23. Seven NYC hotel nights cover September 16–22, with checkout and luggage storage September 23. Departure airport and airline are not yet supplied.
+- Her friend leaves NYC September 18 at 08:00. The September 18/19 helicopter is after that friend leaves.
 - Three SF hotel nights, a provisional overnight coach on September 12–13, two LA hotel nights, one proposed Vegas hotel night September 15 and seven NYC nights from September 16.
 - The helicopter experience is in NYC only: September 18 primary, September 19 the only backup. No Grand Canyon excursion.
 - September 12: rental to Santa Cruz, car drop-off in Santa Cruz (branch and return deadline to confirm), Highway 17 Express to San Jose, then intercity bus to LA. An after-midnight departure requires a September 13 ticket. Bus availability is not confirmed.
@@ -25,4 +26,4 @@ The site is dependency-free static HTML, CSS and JavaScript. Python 3.12+ is use
 
 ## Implementation
 
-All 15 days are present in static HTML and can be expanded without JavaScript. JavaScript adds expand/collapse-all and a print action that opens every day and restores the previous view afterward. Photos are stored locally; Google Fonts is optional, with system and serif fallbacks. No tracking or user data collection.
+All 16 calendar dates are present in static HTML and can be expanded without JavaScript. JavaScript adds expand/collapse-all and a print action that opens every day and restores the previous view afterward. Photos are stored locally; Google Fonts is optional, with system and serif fallbacks. No tracking or user data collection.
